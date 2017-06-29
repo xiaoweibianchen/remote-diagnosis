@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="RemoteAskLoginMapper">
+    <resultMap id="BaseResultMap" type="RemoteAskLoginDO">
+        <result column="ID" property="id" jdbcType="VARCHAR" />
+        <result column="LOGIN_NAME" property="loginName" jdbcType="VARCHAR" />
+        <result column="INSTITUTION_ID" property="institutionId" jdbcType="VARCHAR" />
+        <result column="PHYSICIAN_ID" property="physictianId" jdbcType="VARCHAR" />
+        <result column="STATE" property="state" jdbcType="VARCHAR" />
+        <result column="CREATED_DATE" property="createdDate" jdbcType="TIMESTAMP" />
+        <result column="CREATED" property="created" jdbcType="VARCHAR" />
+        <result column="MODIFIED_DATE" property="modifiedDate" jdbcType="TIMESTAMP" />
+        <result column="MODIFIED" property="modified" jdbcType="VARCHAR" />
+    </resultMap>
+
+   <sql id="Base_Column_List" >
+       ID,LOGIN_NAME,INSTITUTION_ID,PHYSICIAN_ID,STATE,CREATED_DATE,CREATED,MODIFIED_DATE,MODIFIED
+   </sql>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="caseId" parameterType="RemoteAskLoginDO">
+        INSERT INTO
+        remote_ask_login
+        (LOGIN_NAME,INSTITUTION_ID,PHYSICIAN_ID,STATE,CREATED_DATE,CREATED,MODIFIED_DATE,MODIFIED)
+        VALUE
+        (#{loginName,jdbcType=VARCHAR},#{institutionId,jdbcType=VARCHAR},#{physictianId,jdbcType=VARCHAR},#{state,jdbcType=VARCHAR},NOW(),
+        #{created,jdbcType=VARCHAR},NOW(),#{modified,jdbcType=VARCHAR})
+    </insert>
+
+
+
+    <!--  技术后台支持纯sql插入数据-->
+    <insert id="insertBySql"  parameterType="java.util.Map" >
+        ${sql}
+    </insert>
+    <select id="updelete"  parameterType="java.util.Map" resultType="java.lang.Object" >
+        ${sql}
+    </select>
+
+<select id="selectByParams" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from remote_ask_login
+		where LOGIN_NAME = #{loginName}
+	</select>
+
+
+</mapper>
