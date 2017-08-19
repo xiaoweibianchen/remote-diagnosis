@@ -45,14 +45,6 @@
             <artifactId>commons-logging</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wangyin.boss</groupId>
-            <artifactId>boss-jar</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin.r2m</groupId>
-            <artifactId>r2m-client</artifactId>
-        </dependency>
-        <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
@@ -106,18 +98,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin</groupId>
-            <artifactId>wangyin-dubbo</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
         </dependency>
         <dependency>
             <groupId>opensymphony</groupId>
