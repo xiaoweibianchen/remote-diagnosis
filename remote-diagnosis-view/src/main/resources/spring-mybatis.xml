@@ -16,7 +16,7 @@
 
        <context:annotation-config/>
 
-       <bean id="sampleDataSource" class="com.wangyin.commons.cp.WangyinCPDataSource">
+       <bean id="sampleDataSource" class="com.remote.diagnosis.dao.com.diagnosis.commons.cp.RemoteDiagnosisCPDataSource">
               <property name="propertiesLocation" value="classpath:db.properties"/>
        </bean>
 

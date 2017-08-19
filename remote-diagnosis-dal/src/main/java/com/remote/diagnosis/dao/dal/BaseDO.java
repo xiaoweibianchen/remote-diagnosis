@@ -3,9 +3,6 @@ package com.remote.diagnosis.dao.dal;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by heliqing on 2017/3/22.
- */
 public class BaseDO implements Serializable {
     private String created;
     private Date createdDate;

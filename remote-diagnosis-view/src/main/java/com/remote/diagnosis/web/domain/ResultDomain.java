@@ -1,8 +1,5 @@
 package com.remote.diagnosis.web.domain;
 
-/**
- * Created by heliqing on 2017/3/17.
- */
 public class ResultDomain {
     String rsultMessage;
     Object data;
