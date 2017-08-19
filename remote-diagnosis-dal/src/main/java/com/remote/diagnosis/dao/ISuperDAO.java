@@ -2,10 +2,11 @@ package com.remote.diagnosis.dao;
 
 
 
-import com.wangyin.customercare.facade.result.Page;
 
 import java.util.List;
 import java.util.Map;
+
+import com.remote.diagnosis.dao.impl.Page;
 
 
 public interface ISuperDAO {

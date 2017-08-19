@@ -19,7 +19,6 @@
         <servlet-version>2.4</servlet-version>
         <jsp-api-version>2.0</jsp-api-version>
         <spring-version>3.2.4.RELEASE</spring-version>
-        <wangyin-dubbo_version>1.0.11</wangyin-dubbo_version>
         <zookeeper-version>3.4.3</zookeeper-version>
         <logback-extensions-version>0.1.1</logback-extensions-version>
         <zkclient-version>0.1</zkclient-version>
@@ -112,16 +111,6 @@
                 <version>5.1.29</version>
             </dependency>
             <dependency>
-                <groupId>com.wangyin.boss</groupId>
-                <artifactId>boss-jar</artifactId>
-                <version>${boss-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.wangyin.r2m</groupId>
-                <artifactId>r2m-client</artifactId>
-                <version>${r2m.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet.version}</version>
@@ -181,39 +170,6 @@
                 <artifactId>spring-context</artifactId>
                 <version>${spring-version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.wangyin</groupId>
-                <artifactId>wangyin-dubbo</artifactId>
-                <version>${wangyin-dubbo_version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.zookeeper</groupId>
-                <artifactId>zookeeper</artifactId>
-                <version>${zookeeper-version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-log4j12</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>log4j</groupId>
-                        <artifactId>log4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.github.sgroschupf</groupId>
-                <artifactId>zkclient</artifactId>
-                <version>${zkclient-version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>log4j</groupId>
-                        <artifactId>log4j</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
             <dependency>
                 <groupId>opensymphony</groupId>
                 <artifactId>sitemesh</artifactId>
@@ -229,25 +185,6 @@
                 <artifactId>standard</artifactId>
                 <version>${taglibs-version}</version>
             </dependency>
-
-
-            <dependency>
-                <groupId>com.wangyin.customer</groupId>
-                <artifactId>customer-api</artifactId>
-                <version>${customer_api_version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.wangyin.npp</groupId>
-                        <artifactId>npp-common</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.wangyin.wallet</groupId>
-                        <artifactId>memberinfo-common</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
@@ -262,11 +199,6 @@
                 <groupId>commons-beanutils</groupId>
                 <artifactId>commons-beanutils</artifactId>
                 <version>1.8.3</version>
-            </dependency>
-            <dependency>
-                <groupId>com.wangyin.account</groupId>
-                <artifactId>account-api-query</artifactId>
-                <version>1.0.3</version>
             </dependency>
             <dependency>
                 <groupId>org.mybatis</groupId>
@@ -325,11 +257,6 @@
             <version>3.2.4.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>com.wangyin.sgm</groupId>
-            <artifactId>sgm-all</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
         </dependency>
@@ -361,14 +288,6 @@
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin.boss</groupId>
-            <artifactId>boss-jar</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin.r2m</groupId>
-            <artifactId>r2m-client</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -411,18 +330,6 @@
             <artifactId>spring-context</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.wangyin</groupId>
-            <artifactId>wangyin-dubbo</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.sgroschupf</groupId>
-            <artifactId>zkclient</artifactId>
-        </dependency>
-        <dependency>
             <groupId>opensymphony</groupId>
             <artifactId>sitemesh</artifactId>
         </dependency>
@@ -434,31 +341,11 @@
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.wangyin.customer</groupId>
-            <artifactId>customer-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.wangyin.account</groupId>
-            <artifactId>account-api-query</artifactId>
-            <version>1.0.3</version>
-        </dependency>
         <!--文件上传-->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.3</version>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin.boss</groupId>
-            <artifactId>boss-jar</artifactId>
-            <version>${boss-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.wangyin.customercare</groupId>
-            <artifactId>customercare.api.manage</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>

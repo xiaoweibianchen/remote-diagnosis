@@ -1,15 +1,12 @@
 package com.remote.diagnosis.service.request;
 
-import com.wangyin.customercare.facade.request.RequestBase;
 
 /**
  * Created by heliqing on 2017/3/21.
  */
 public class PageRequestBase extends RequestBase {
-    //默认每页20个
     private static final Integer DEFAULT_PAGE_SIZE=20;
 
-    //默认页面从0开始
     private static final Integer DEFAULT_PAGE_NO =0;
 
     private Integer pageSize;

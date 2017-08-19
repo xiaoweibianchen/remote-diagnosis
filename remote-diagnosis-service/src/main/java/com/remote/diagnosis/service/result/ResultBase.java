@@ -1,7 +1,6 @@
 package com.remote.diagnosis.service.result;
 
-import com.wangyin.commons.log.access.RequestTrace;
-import com.wangyin.npp.common.dto.MessageResponse;
+import com.remote.diagnosis.service.request.RequestTrace;
 
 import java.io.Serializable;
 

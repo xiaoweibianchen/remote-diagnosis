@@ -2,7 +2,6 @@ package com.remote.diagnosis.dao.impl;
 
 
 import com.remote.diagnosis.dao.ISuperDAO;
-import com.wangyin.customercare.facade.result.Page;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
@@ -49,7 +48,7 @@ public class SuperDAO extends SqlSessionDaoSupport implements ISuperDAO {
 	@Override
     @SuppressWarnings("unchecked")
 	public Page queryPagination(String statementName, Map<String, Object> param) {
-		// 查询数据总数
+		// 鏌ヨ鏁版嵁鎬绘暟
 		Integer totalCount = (Integer) this.getSqlSession().selectOne(statementName + "-count", param);
 
 		Integer pageSize = 20;
@@ -64,7 +63,6 @@ public class SuperDAO extends SqlSessionDaoSupport implements ISuperDAO {
 		}
 
 		if (pageSize < 1) {
-			// 小于1时直接查询全部记录
 			param.put("start", 0);
 			param.put("offset", totalCount);
 		} else {
@@ -79,6 +77,6 @@ public class SuperDAO extends SqlSessionDaoSupport implements ISuperDAO {
 			data.addAll(resultList);
 		}
 
-		return new Page(pageSize, pageNo, totalCount, data);
+		return new Page (pageSize, pageNo, totalCount, data);
 	}
 }

@@ -1,25 +1,18 @@
 package com.remote.diagnosis.service.request;
 
-import com.wangyin.commons.log.access.RequestTrace;
-import com.wangyin.npp.common.dto.MessageRequest;
-
 import java.io.Serializable;
 import java.util.Date;
-
-/**
- * Created by heliqing on 2017/3/21.
- */
 public class RequestBase  extends MessageRequest implements Serializable{
 
     @RequestTrace
     private String  customerCareRequestNo;
-    /** 创建人 */
+    /** 鍒涘缓浜� */
     private String created;
-    /** 创建时间 */
+    /** 鍒涘缓鏃堕棿 */
     private Date createdDate;
-    /** 修改人 */
+    /** 淇敼浜� */
     private String modified;
-    /** 修改时间 */
+    /** 淇敼鏃堕棿 */
     private Date modifiedDate;
 
     public String getCustomerCareRequestNo() {

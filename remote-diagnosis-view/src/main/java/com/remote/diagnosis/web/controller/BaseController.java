@@ -1,7 +1,6 @@
 package com.remote.diagnosis.web.controller;
 
-import com.alibaba.dubbo.common.utils.CollectionUtils;
-import com.remote.diagnosis.service.result.Page;
+import com.remote.diagnosis.dao.impl.Page;
 import com.remote.diagnosis.service.result.ResultBase;
 import com.wangyin.boss.jar.util.JsonUtil;
 
@@ -16,10 +15,6 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by heliqing on 2017/3/17.
- * 基础方法类
- */
 public class BaseController {
 
     private static final Logger logger= LoggerFactory.getLogger(BaseController.class);
