@@ -2,7 +2,7 @@ package com.remote.diagnosis.web.controller;
 
 import com.remote.diagnosis.dao.impl.Page;
 import com.remote.diagnosis.service.result.ResultBase;
-import com.wangyin.boss.jar.util.JsonUtil;
+import com.remote.diagnosis.web.tool.JsonUtil;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
