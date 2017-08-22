@@ -115,12 +115,6 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.wangyin.boss</groupId>
-            <artifactId>boss-jar</artifactId>
-            <version>${boss-version}</version>
-        </dependency>
         <dependency>
             <groupId>com.remote.diagnosis</groupId>
             <artifactId>remote-diagnosis-service</artifactId>
