@@ -41,7 +41,7 @@
         <poi-ooxml>3.9</poi-ooxml>
         <slf4j-version>1.7.5</slf4j-version>
          <fastjson-version>1.1.39</fastjson-version>
-    </properties>
+    </properties> 
 
     <dependencyManagement>
         <dependencies>
