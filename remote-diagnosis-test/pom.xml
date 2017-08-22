@@ -30,6 +30,7 @@
             <groupId>com.remote.diagnosis</groupId>
             <artifactId>remote-diagnosis-view</artifactId>
             <version>1.0.0</version>
+            <type>war</type>
         </dependency>
               <dependency>
         <groupId>junit</groupId>

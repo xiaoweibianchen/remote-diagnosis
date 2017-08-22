@@ -9,11 +9,13 @@ import javax.sql.DataSource;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.SQLFeatureNotSupportedException;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Properties;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.logging.Logger;
 
 public class RemoteDiagnosisCPDataSource extends RemoteDiagnosisCPConfig implements DataSource, ObjectFactory {
 
@@ -99,6 +101,12 @@ public class RemoteDiagnosisCPDataSource extends RemoteDiagnosisCPConfig impleme
             this.rwl.readLock().unlock();
         }
     }
+
+	@Override
+	public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 }
