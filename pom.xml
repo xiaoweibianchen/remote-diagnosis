@@ -18,7 +18,7 @@
         <profiles.dir>src/main/profiles</profiles.dir>
         <servlet-version>2.4</servlet-version>
         <jsp-api-version>2.0</jsp-api-version>
-        <spring-version>3.2.4.RELEASE</spring-version>
+        <spring-version>4.3.5.RELEASE</spring-version>
         <zookeeper-version>3.4.3</zookeeper-version>
         <logback-extensions-version>0.1.1</logback-extensions-version>
         <zkclient-version>0.1</zkclient-version>
@@ -28,7 +28,7 @@
         <boss-version>0.0.6</boss-version>
         <r2m.version>1.4.0</r2m.version>
         <servlet.version>3.0.1</servlet.version>
-        <spring.version>3.2.4.RELEASE</spring.version>
+        <spring.version>4.3.5.RELEASE</spring.version>
         <lang.version>3.3.2</lang.version>
         <httpClient.version>3.1</httpClient.version>
         <api-manage>1.2.4</api-manage>
