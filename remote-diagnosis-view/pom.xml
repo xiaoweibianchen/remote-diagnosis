@@ -23,11 +23,6 @@
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
         </dependency>
-        <!--jsf-->
-        <dependency>
-            <groupId>com.jd</groupId>
-            <artifactId>jsf</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.googlecode.rapid-framework</groupId>
             <artifactId>rapid-core</artifactId>
